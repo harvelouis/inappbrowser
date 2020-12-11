@@ -138,7 +138,7 @@ public class InAppBrowser extends CordovaPlugin {
     private final static int FILECHOOSER_REQUESTCODE = 1;
     private final static int FILECHOOSER_REQUESTCODE_LOLLIPOP = 2;
     private String closeButtonCaption = "";
-    private String closeButtonColor = "";
+    private String closeButtonColor = "white";
     private boolean leftToRight = false;
     private int toolbarColor = android.graphics.Color.TRANSPARENT; //android.graphics.Color.LTGRAY;
     private boolean hideNavigationButtons = true;
