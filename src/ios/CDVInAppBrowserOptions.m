@@ -26,7 +26,7 @@
     if (self = [super init]) {
         // default values
         self.usewkwebview = NO;
-        self.location = YES;
+        self.location = NO; //YES;
         self.toolbar = YES;
         self.closebuttoncaption = nil;
         self.toolbarposition = @"bottom";
@@ -42,7 +42,7 @@
         self.suppressesincrementalrendering = NO;
         self.hidden = NO;
         self.disallowoverscroll = NO;
-        self.hidenavigationbuttons = NO;
+        self.hidenavigationbuttons = YES; //NO;
         self.closebuttoncolor = nil;
         self.lefttoright = false;
         self.toolbarcolor = nil;
