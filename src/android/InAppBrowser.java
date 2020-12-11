@@ -138,7 +138,7 @@ public class InAppBrowser extends CordovaPlugin {
     private final static int FILECHOOSER_REQUESTCODE = 1;
     private final static int FILECHOOSER_REQUESTCODE_LOLLIPOP = 2;
     private String closeButtonCaption = "";
-    private String closeButtonColor = "";
+    private String closeButtonColor = android.graphics.Color.LTGRAY;
     private boolean leftToRight = false;
     private int toolbarColor = android.graphics.Color.TRANSPARENT; //android.graphics.Color.LTGRAY;
     private boolean hideNavigationButtons = false;
@@ -633,7 +633,7 @@ public class InAppBrowser extends CordovaPlugin {
     public String showWebPage(final String url, HashMap<String, String> features) {
         // Determine if we should hide the location bar.
         showLocationBar = true;
-        showZoomControls = true;
+        showZoomControls = false;//true;
         openWindowHidden = false;
         mediaPlaybackRequiresUserGesture = false;
 
@@ -1041,8 +1041,8 @@ public class InAppBrowser extends CordovaPlugin {
                 inAppWebView.requestFocusFromTouch();
 
                 // Add the back and forward buttons to our action button container layout
-                actionButtonContainer.addView(back);
-                actionButtonContainer.addView(forward);
+                //actionButtonContainer.addView(back);
+                //actionButtonContainer.addView(forward);
 
                 // Add the views to our toolbar if they haven't been disabled
                 if (!hideNavigationButtons) toolbar.addView(actionButtonContainer);
